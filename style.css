@@ -2,27 +2,27 @@ html,body,h1,h2,h3,h4,p,div,a,ul,li,span{
     margin:0;
     padding:0;
 }
-.box1{
-    min-height:100px;
+html,body{
+   height:100%; /*let body have the browser's height */
+
 }
 
 .box2{
-    min-height:100px;
     width:33.33%;
     float:left;
 }
-body{
 
-    height:800px;
-}
 #red{
     background:red;
-    height:15%;
+    height:50px;
 }
 
 .parent{
     box-sizing:border-box;
-    height:70%;
+    position:absolute;/**/
+    top:50px;/*give the space to red part*/
+    bottom:50px;/*give the space to purple part*/
+    width:100%;
 
 }
 #yellow{
@@ -42,6 +42,8 @@ body{
 
 #purple{
     background:purple;
-    clear:both;
-    height:15%;
+    height:50px;
+    width:100%;/*everytime position is relative, heightand width have to be setted,or the default value of height and width are 0;*/
+    position: absolute;/*the parent part of this absolute part has to be relative*/
+    bottom:0px;/*set the position of purple*/
 }
