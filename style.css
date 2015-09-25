@@ -2,38 +2,46 @@ html,body,h1,h2,h3,h4,p,div,a,ul,li,span{
     margin:0;
     padding:0;
 }
-.box{
+.box1{
     min-height:100px;
 }
+
+.box2{
+    min-height:100px;
+    width:33.33%;
+    float:left;
+}
 body{
-    position: relative;
+
+    height:800px;
 }
 #red{
-    background: red;
+    background:red;
+    height:15%;
 }
+
 .parent{
     box-sizing:border-box;
-    height:600px;
+    height:70%;
+
 }
 #yellow{
     background:yellow;
-    width:33.3333%;
-    height: 100%;
-    float:left;
+    height:100%;
+
 }
 #green{
     background:green;
-    width:33.3333%;
-    height: 100%;
-    float:left;
+    height:100%;
 }
 #blue{
     background:blue;
-    width:33.3333%;
-    height: 100%;
-    float:left;
+    height:100%;
+
 }
+
 #purple{
     background:purple;
     clear:both;
+    height:15%;
 }
